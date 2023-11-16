@@ -493,6 +493,72 @@ img {
   background-color: var(--color-green);
 }
 
+/*INPUT IN FOOTER*/
+
+.footer-subscribe {
+  margin-left: 80px;
+}
+
+.footer-subscribe-text {
+  margin-bottom: 16px;
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-subscribe-form-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--color-white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--color-white);
+}
+
+.footer-subscribe-form-input::placeholder {
+  color: var(--color-white);
+}
+
+.footer-subscribe-form-button {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  cursor: pointer;
+  background-color: var(--color-iris);
+  /*removement of button's basic styles*/
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-subscribe-form-icon {
+  margin-left: 16px;
+  fill: var(--color-white);
+}
+
+/* MODAL WINDOW */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -513,8 +579,6 @@ img {
   visibility: visible;
   pointer-events: auto;
 }
-
-/* MODAL WINDOW */
 
 .modal-window {
   width: 408px;
@@ -697,4 +761,5 @@ img {
   line-height: 1.5px;
   letter-spacing: 0.04em;
 }
- /*444 form-div*/
+
+/*backdrop + is-open*/
