@@ -63,6 +63,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  background-color: var(--color-white);
 }
 
 .header .container {
@@ -178,7 +179,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background.jpg);
+    url(../images/backgrounds/background1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -796,3 +797,67 @@ img {
   font-family: "Roboto", sans-serif;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* 
+BACKGROUND IMAGE 
+screen AND
+min-resolution: 2x - 192, 3x - 288dpi 
+min-resolution: 2, 3dppx
+min-device-pixel-ratio: 2,3 
+AND (min-width: )
+
+PICTUES THAT HAVE SAME SIZES ON DIFFERENT DEVICES (HTML)
+<img ... srcset= image@2x.jpg 2x, image@3x.jpg 3x" 
+src="image.jpg"
+alt=""/>
+
+PICTURES THAT HAVE DIFFERENT SIZES ON DIFFERENT DEVICES (HTML)
+<picture>
+<source>
+srcset="image.jpg 1x, image@2x.jpg 2x" 
+media=(min-width: )
+/>
+<img src="image.jpg"/>
+</picture>
+
+MIN WIDTH IS ORDERED FROM > TO <
+MAX WIDTH IS FROM < TO >
+
+
+TO CENTER SOMETHING
+margin-left, margin-right = auto;
+
+min-width: container + paddings
+IN CONTAINER min-width in @media = max-width in container
+
+MOBILE FIRST. TABLET AND DESKTOP ARE WITH @media
+
+DEFAULT STYLES OF BUTTONS (bg-color, border, padding, line-height, (additionally fill/stroke) must be applied
+
+justify-content: space-between attachea flex-elements to the edges of container
+
+MOBILE VERSION HEADER
+ONE DIV (position: fixed;) IS FOR THE WHOLE MENU AND THE SECOND ONE (position: relative;) IS FOR ITEMS INSIDE THE MENU ONLY
+USE TOP, LEFT, RIGHT FOR POSITIONING BUTTONS IN THE MENU
+
+transform: translateX(100%) IS FOR MOVING THE MENU TO THE RIGHT (APPLY FOR THE FIRST DIV)
+transform: translateX(0%) TO THE FIRST DIV. is-open TO SHOW THE MENU ON THE INTERFACE
++ TRANSITIONS
+
+ALL THE MOBILE HEADER ELEMENTS ARE WRITTEN IN AN APPROPRIATE @media screen and (max-width: 767px;)
+
+TABLET VERSION HEADER
+display: none; FOR THE MOBILE HEADER MENU AND OPEN MENU BUTTON in @media screen and (min-width: 768px;)
+NAVIGATION LIST HAS display: none; ON MOBILE AND display: flex; ON TABLET AS IT APPEARS AGAIN
+
+WIDTH OF GROUP ELEMENTS LIKE CARDS IS GAP+WIDTH(CALC)
+CARDS: HTML OF MOBILE - W100% INSTEAD OF WIDTH(CALC) 
+
+COMMENT AND NOT DELETE INITIAL CODE FOR PC!
+
+FLEX: WRAP FOR MOBILE FLEX CONTAINERS
+
+GLOBAL STYLES CORRECTED ACCORDING TO MOBILE SIZES AND BACK TO DESKTOP USING @MEDIA
+
+
+*/
